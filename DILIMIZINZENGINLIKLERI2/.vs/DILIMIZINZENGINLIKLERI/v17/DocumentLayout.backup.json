@@ -1,14 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Win10\\Desktop\\CENG\u0130Z\\OKULEV\\DILIMIZINZENGINLIKLERI2\\",
+  "WorkspaceRootPath": "C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{50A96D00-3218-4053-B47F-328B546BA620}|DILIMIZINZENGINLIKLERI.csproj|c:\\users\\win10\\desktop\\ceng\u0130z\\okulev\\dilimizinzenginlikleri2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{50A96D00-3218-4053-B47F-328B546BA620}|DILIMIZINZENGINLIKLERI.csproj|C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50A96D00-3218-4053-B47F-328B546BA620}|DILIMIZINZENGINLIKLERI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50A96D00-3218-4053-B47F-328B546BA620}|DILIMIZINZENGINLIKLERI.csproj|c:\\users\\win10\\desktop\\dilimizinzenginlikleri2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50A96D00-3218-4053-B47F-328B546BA620}|DILIMIZINZENGINLIKLERI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50A96D00-3218-4053-B47F-328B546BA620}|DILIMIZINZENGINLIKLERI.csproj|C:\\Users\\Win10\\Desktop\\CENG\u0130Z\\OKULEV\\DILIMIZINZENGINLIKLERI2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{50A96D00-3218-4053-B47F-328B546BA620}|DILIMIZINZENGINLIKLERI.csproj|C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{50A96D00-3218-4053-B47F-328B546BA620}|DILIMIZINZENGINLIKLERI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50A96D00-3218-4053-B47F-328B546BA620}|DILIMIZINZENGINLIKLERI.csproj|C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{50A96D00-3218-4053-B47F-328B546BA620}|DILIMIZINZENGINLIKLERI.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50A96D00-3218-4053-B47F-328B546BA620}|DILIMIZINZENGINLIKLERI.csproj|C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50A96D00-3218-4053-B47F-328B546BA620}|DILIMIZINZENGINLIKLERI.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50A96D00-3218-4053-B47F-328B546BA620}|DILIMIZINZENGINLIKLERI.csproj|C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\baglantisinif.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50A96D00-3218-4053-B47F-328B546BA620}|DILIMIZINZENGINLIKLERI.csproj|solutionrelative:baglantisinif.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,27 +42,75 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "baglantisinif.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\baglantisinif.cs",
+              "RelativeDocumentMoniker": "baglantisinif.cs",
+              "ToolTip": "C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\baglantisinif.cs",
+              "RelativeToolTip": "baglantisinif.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T15:15:19.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\Form2.cs",
+              "RelativeToolTip": "Form2.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwFcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T20:37:32.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\Form2.cs [Design]",
+              "RelativeToolTip": "Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T20:36:31.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Win10\\Desktop\\CENG\u0130Z\\OKULEV\\DILIMIZINZENGINLIKLERI2\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Win10\\Desktop\\CENG\u0130Z\\OKULEV\\DILIMIZINZENGINLIKLERI2\\Form1.cs",
+              "ToolTip": "C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAowFwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAP0AAAAAAAAAAAA2wDsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-27T11:57:52.067Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Win10\\Desktop\\CENG\u0130Z\\OKULEV\\DILIMIZINZENGINLIKLERI2\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Win10\\Desktop\\CENG\u0130Z\\OKULEV\\DILIMIZINZENGINLIKLERI2\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-26T06:00:44.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Win10\\Desktop\\DILIMIZINZENGINLIKLERI2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvxIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T05:59:57.777Z",
+              "EditorCaption": ""
             }
           ]
         }

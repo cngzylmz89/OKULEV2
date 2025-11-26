@@ -16,7 +16,7 @@ namespace DILIMIZINZENGINLIKLERI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DilimizinZenginlikleri());
+            Application.Run(new Form2());
         }
     }
 }
