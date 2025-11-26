@@ -1,0 +1,12 @@
+PROGRAMI NASIL KURARIM.
+1- RAR DOSYASINDAN KLASÖRÜ ÇIKART.
+2- DEBUG klasörüne gir setup u çalıştır.Programı kurulacak.
+3-Programı kurduktan sonra görev yöneticisinden başlangıçta çalıştırılacak programlara DILIMIZINZENGINLIKLERI programını ekle. Böylece bilgisayar her çalıştığında program açılacaktır.
+
+PROGRAM NASIL ÇALIŞIR?
+1- Program, KELIMELER excel dosyasındaki verileri excel dosyasında belirtilen tarihlere göre getirir. KELIMELER excel dosyası programın kurulu olduğu dizindedir. KELIMELER dosyası C:\Program Files (x86)\CENGİZ\DILIMIZINZENGINLIKLERISETUP\KELIMELER.xlsx bu yoldadır. Bu excel dosyasının içinde sadece sütunlardaki verileri kendinize göre değiştiriniz. Dosyanın adını ve tablonun içindeki başlıkları(KELIME, KELIMEANLAM, KELIMECUMLE vb.) değiştirmeyiniz.
+2- Program ilk açıldığında 5 dakika boyunca açık kalır. Programın arayüzünün üstüne başka bir programın arayüzü gelirse zamanlayıcı durur. 5 dakika dolduğunda program kapanır ve KELIMELER excel dosyasındaki GOSTER sütununun ilgili tarihteki satırı 1 olur. O gün içinde program her açıldığında artık 5 dakika beklemez. Yazılar tamamlandığında program kapanır.
+
+3-26 Haziran 2026 tarihine kadar her iş gününe denk gelecek şekilde ben kelime, deyim, atasözü girdim. Siz isterseniz bunları kendinize göre değiştirebilirsiniz.Bunun için KELIMELER dosyasını masaüstüne atıp bilgileri düzenleyip tekrar C:\Program Files (x86)\CENGİZ\DILIMIZINZENGINLIKLERISETUP\KELIMELER.xlsx bu dizine atmanız yeterli.
+
+Kolaylıklar dilerim.

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PERFORMANSISTEMIDataSet1" targetNamespace="http://tempuri.org/PERFORMANSISTEMIDataSet1.xsd" xmlns:mstns="http://tempuri.org/PERFORMANSISTEMIDataSet1.xsd" xmlns="http://tempuri.org/PERFORMANSISTEMIDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PERFORMANSISTEMIConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PERFORMANSISTEMIConnectionString (Settings)" PropertyReference="ApplicationSettings.PERFORMANS.Properties.Settings.GlobalReference.Default.PERFORMANSISTEMIConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="raporTableAdapter" GeneratorDataComponentClassName="raporTableAdapter" Name="rapor" UserDataComponentName="raporTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PERFORMANSISTEMIConnectionString (Settings)" DbObjectName="rapor" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NOTID, BRANSADI, SAATAD, SINIFAD, OGRENCIADISOYADI, OGRENCINUMARASI, TARIH, OLCUTBIR, OLCUTIKI, OLCUTUC, OLCUTDORT, OLCUTBES, UYARIVARYOK, UYARI, TOPLAMPUAN, HAFTA FROM rapor</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NOTID" DataSetColumn="NOTID" />
+              <Mapping SourceColumn="BRANSADI" DataSetColumn="BRANSADI" />
+              <Mapping SourceColumn="SAATAD" DataSetColumn="SAATAD" />
+              <Mapping SourceColumn="SINIFAD" DataSetColumn="SINIFAD" />
+              <Mapping SourceColumn="OGRENCIADISOYADI" DataSetColumn="OGRENCIADISOYADI" />
+              <Mapping SourceColumn="OGRENCINUMARASI" DataSetColumn="OGRENCINUMARASI" />
+              <Mapping SourceColumn="TARIH" DataSetColumn="TARIH" />
+              <Mapping SourceColumn="OLCUTBIR" DataSetColumn="OLCUTBIR" />
+              <Mapping SourceColumn="OLCUTIKI" DataSetColumn="OLCUTIKI" />
+              <Mapping SourceColumn="OLCUTUC" DataSetColumn="OLCUTUC" />
+              <Mapping SourceColumn="OLCUTDORT" DataSetColumn="OLCUTDORT" />
+              <Mapping SourceColumn="OLCUTBES" DataSetColumn="OLCUTBES" />
+              <Mapping SourceColumn="UYARIVARYOK" DataSetColumn="UYARIVARYOK" />
+              <Mapping SourceColumn="UYARI" DataSetColumn="UYARI" />
+              <Mapping SourceColumn="TOPLAMPUAN" DataSetColumn="TOPLAMPUAN" />
+              <Mapping SourceColumn="HAFTA" DataSetColumn="HAFTA" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PERFORMANSISTEMIDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="PERFORMANSISTEMIDataSet1" msprop:Generator_DataSetName="PERFORMANSISTEMIDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="rapor" msprop:Generator_RowEvHandlerName="raporRowChangeEventHandler" msprop:Generator_RowDeletedName="raporRowDeleted" msprop:Generator_RowDeletingName="raporRowDeleting" msprop:Generator_RowEvArgName="raporRowChangeEvent" msprop:Generator_TablePropName="rapor" msprop:Generator_RowChangedName="raporRowChanged" msprop:Generator_RowChangingName="raporRowChanging" msprop:Generator_TableClassName="raporDataTable" msprop:Generator_RowClassName="raporRow" msprop:Generator_TableVarName="tablerapor" msprop:Generator_UserTableName="rapor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NOTID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="NOTID" msprop:Generator_ColumnPropNameInTable="NOTIDColumn" msprop:Generator_ColumnVarNameInTable="columnNOTID" msprop:Generator_UserColumnName="NOTID" type="xs:int" minOccurs="0" />
+              <xs:element name="BRANSADI" msprop:Generator_ColumnPropNameInRow="BRANSADI" msprop:Generator_ColumnPropNameInTable="BRANSADIColumn" msprop:Generator_ColumnVarNameInTable="columnBRANSADI" msprop:Generator_UserColumnName="BRANSADI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SAATAD" msprop:Generator_ColumnPropNameInRow="SAATAD" msprop:Generator_ColumnPropNameInTable="SAATADColumn" msprop:Generator_ColumnVarNameInTable="columnSAATAD" msprop:Generator_UserColumnName="SAATAD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SINIFAD" msprop:Generator_ColumnPropNameInRow="SINIFAD" msprop:Generator_ColumnPropNameInTable="SINIFADColumn" msprop:Generator_ColumnVarNameInTable="columnSINIFAD" msprop:Generator_UserColumnName="SINIFAD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OGRENCIADISOYADI" msprop:Generator_ColumnPropNameInRow="OGRENCIADISOYADI" msprop:Generator_ColumnPropNameInTable="OGRENCIADISOYADIColumn" msprop:Generator_ColumnVarNameInTable="columnOGRENCIADISOYADI" msprop:Generator_UserColumnName="OGRENCIADISOYADI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OGRENCINUMARASI" msprop:Generator_ColumnPropNameInRow="OGRENCINUMARASI" msprop:Generator_ColumnPropNameInTable="OGRENCINUMARASIColumn" msprop:Generator_ColumnVarNameInTable="columnOGRENCINUMARASI" msprop:Generator_UserColumnName="OGRENCINUMARASI" type="xs:short" minOccurs="0" />
+              <xs:element name="TARIH" msprop:Generator_ColumnPropNameInRow="TARIH" msprop:Generator_ColumnPropNameInTable="TARIHColumn" msprop:Generator_ColumnVarNameInTable="columnTARIH" msprop:Generator_UserColumnName="TARIH" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="OLCUTBIR" msprop:Generator_ColumnPropNameInRow="OLCUTBIR" msprop:Generator_ColumnPropNameInTable="OLCUTBIRColumn" msprop:Generator_ColumnVarNameInTable="columnOLCUTBIR" msprop:Generator_UserColumnName="OLCUTBIR" type="xs:int" minOccurs="0" />
+              <xs:element name="OLCUTIKI" msprop:Generator_ColumnPropNameInRow="OLCUTIKI" msprop:Generator_ColumnPropNameInTable="OLCUTIKIColumn" msprop:Generator_ColumnVarNameInTable="columnOLCUTIKI" msprop:Generator_UserColumnName="OLCUTIKI" type="xs:int" minOccurs="0" />
+              <xs:element name="OLCUTUC" msprop:Generator_ColumnPropNameInRow="OLCUTUC" msprop:Generator_ColumnPropNameInTable="OLCUTUCColumn" msprop:Generator_ColumnVarNameInTable="columnOLCUTUC" msprop:Generator_UserColumnName="OLCUTUC" type="xs:int" minOccurs="0" />
+              <xs:element name="OLCUTDORT" msprop:Generator_ColumnPropNameInRow="OLCUTDORT" msprop:Generator_ColumnPropNameInTable="OLCUTDORTColumn" msprop:Generator_ColumnVarNameInTable="columnOLCUTDORT" msprop:Generator_UserColumnName="OLCUTDORT" type="xs:int" minOccurs="0" />
+              <xs:element name="OLCUTBES" msprop:Generator_ColumnPropNameInRow="OLCUTBES" msprop:Generator_ColumnPropNameInTable="OLCUTBESColumn" msprop:Generator_ColumnVarNameInTable="columnOLCUTBES" msprop:Generator_UserColumnName="OLCUTBES" type="xs:int" minOccurs="0" />
+              <xs:element name="UYARIVARYOK" msprop:Generator_ColumnPropNameInRow="UYARIVARYOK" msprop:Generator_ColumnPropNameInTable="UYARIVARYOKColumn" msprop:Generator_ColumnVarNameInTable="columnUYARIVARYOK" msprop:Generator_UserColumnName="UYARIVARYOK" type="xs:boolean" minOccurs="0" />
+              <xs:element name="UYARI" msprop:Generator_ColumnPropNameInRow="UYARI" msprop:Generator_ColumnPropNameInTable="UYARIColumn" msprop:Generator_ColumnVarNameInTable="columnUYARI" msprop:Generator_UserColumnName="UYARI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOPLAMPUAN" msprop:Generator_ColumnPropNameInRow="TOPLAMPUAN" msprop:Generator_ColumnPropNameInTable="TOPLAMPUANColumn" msprop:Generator_ColumnVarNameInTable="columnTOPLAMPUAN" msprop:Generator_UserColumnName="TOPLAMPUAN" type="xs:int" minOccurs="0" />
+              <xs:element name="HAFTA" msprop:Generator_ColumnPropNameInRow="HAFTA" msprop:Generator_ColumnPropNameInTable="HAFTAColumn" msprop:Generator_ColumnVarNameInTable="columnHAFTA" msprop:Generator_UserColumnName="HAFTA" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

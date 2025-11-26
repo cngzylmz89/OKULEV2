@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="KELIMELER">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="KELIME" Type="varchar" MaxLength="30" />
+    <Property Name="KELIMEANLAM" Type="varchar" MaxLength="100" />
+    <Property Name="DEYIM" Type="varchar" MaxLength="50" />
+    <Property Name="DEYIMANLAM" Type="varchar" MaxLength="100" />
+    <Property Name="ATASOZUSOZ" Type="varchar" MaxLength="150" />
+    <Property Name="YAZAR" Type="varchar" MaxLength="150" />
+    <Property Name="TARIH" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="KULLANICI">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="KULLANICIADI" Type="varchar" MaxLength="30" />
+    <Property Name="KULLANICISIFRE" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="KELIMELER" EntityType="Self.KELIMELER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KULLANICI" EntityType="Self.KULLANICI" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="KELIMELER">
+      <EntityTypeMapping TypeName="Model.KELIMELER">
+        <MappingFragment StoreEntitySet="KELIMELER">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="KELIME" ColumnName="KELIME" />
+          <ScalarProperty Name="KELIMEANLAM" ColumnName="KELIMEANLAM" />
+          <ScalarProperty Name="DEYIM" ColumnName="DEYIM" />
+          <ScalarProperty Name="DEYIMANLAM" ColumnName="DEYIMANLAM" />
+          <ScalarProperty Name="ATASOZUSOZ" ColumnName="ATASOZUSOZ" />
+          <ScalarProperty Name="YAZAR" ColumnName="YAZAR" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KULLANICI">
+      <EntityTypeMapping TypeName="Model.KULLANICI">
+        <MappingFragment StoreEntitySet="KULLANICI">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="KULLANICIADI" ColumnName="KULLANICIADI" />
+          <ScalarProperty Name="KULLANICISIFRE" ColumnName="KULLANICISIFRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
