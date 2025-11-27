@@ -67,6 +67,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmizin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmizin.Designer.cs">
+      <DependentUpon>frmizin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmtelefon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmizin.resx">
+      <DependentUpon>frmizin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmtelefon.resx">
       <DependentUpon>frmtelefon.cs</DependentUpon>
@@ -129,13 +138,6 @@
     <None Include="Resources\icons8_close_40px.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database1.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database1_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database1.mdf</DependentUpon>
-    </Content>
     <None Include="Resources\icons8_restore_window_26px.png" />
     <None Include="Resources\icons8_close_window_26px1.png" />
     <None Include="Resources\icons8_minimize_window_26px1.png" />
