@@ -93,6 +93,16 @@ namespace OGRENCITAKIPPROGRAMI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_insert_50px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_insert_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_maximize_window_26px {
             get {
                 object obj = ResourceManager.GetObject("icons8_maximize_window_26px", resourceCulture);
@@ -143,6 +153,16 @@ namespace OGRENCITAKIPPROGRAMI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Report_Card_64px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Report_Card_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_restore_window_26px {
             get {
                 object obj = ResourceManager.GetObject("icons8_restore_window_26px", resourceCulture);
@@ -156,6 +176,16 @@ namespace OGRENCITAKIPPROGRAMI.Properties {
         internal static System.Drawing.Bitmap icons8_school_uniform_64px {
             get {
                 object obj = ResourceManager.GetObject("icons8_school_uniform_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_search_64px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_search_64px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

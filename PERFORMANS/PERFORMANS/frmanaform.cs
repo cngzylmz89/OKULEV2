@@ -14,6 +14,13 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DocumentFormat.OpenXml.Packaging;
+using DocumentFormat.OpenXml;
+
+
+
+
+
 
 namespace PERFORMANS
 {
@@ -48,6 +55,87 @@ namespace PERFORMANS
             return weekNum;
 
         }
+        public void SozlesmeOlustur()
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Title = "Sözleşmeyi Kaydet";
+            sfd.Filter = "Word Dosyası (*.docx)|*.docx";
+            sfd.FileName = "Sozlesme_" + lblogrenciadsoyad.Text + ".docx";
+            sfd.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                using (WordprocessingDocument wordDoc =
+                    WordprocessingDocument.Create(sfd.FileName, WordprocessingDocumentType.Document))
+                {
+                    var mainPart = wordDoc.AddMainDocumentPart();
+                    mainPart.Document = new DocumentFormat.OpenXml.Wordprocessing.Document();
+                    var body = new DocumentFormat.OpenXml.Wordprocessing.Body();
+
+                    // BAŞLIK
+                    var baslik = new DocumentFormat.OpenXml.Wordprocessing.Paragraph(
+                        new DocumentFormat.OpenXml.Wordprocessing.Run(
+                            new DocumentFormat.OpenXml.Wordprocessing.RunProperties(
+                                new DocumentFormat.OpenXml.Wordprocessing.Bold(),
+                                new DocumentFormat.OpenXml.Wordprocessing.FontSize() { Val = "28" }
+                            ),
+                            new DocumentFormat.OpenXml.Wordprocessing.Text("ÖĞRENCİ SÖZLEŞMESİ")
+                        )
+                    );
+
+                    baslik.ParagraphProperties =
+                        new DocumentFormat.OpenXml.Wordprocessing.ParagraphProperties(
+                            new DocumentFormat.OpenXml.Wordprocessing.Justification()
+                            { Val = DocumentFormat.OpenXml.Wordprocessing.JustificationValues.Center }
+                        );
+
+                    body.Append(baslik);
+                    body.Append(new DocumentFormat.OpenXml.Wordprocessing.Paragraph(
+                        new DocumentFormat.OpenXml.Wordprocessing.Run(
+                            new DocumentFormat.OpenXml.Wordprocessing.Text(" ")
+                        )));
+
+                    // İÇERİK
+                    var icerik = new DocumentFormat.OpenXml.Wordprocessing.Paragraph();
+                    string tarihSaat = DateTime.Now.ToString("dd.MM.yyyy HH:mm");
+
+                    icerik.Append(new DocumentFormat.OpenXml.Wordprocessing.Run(
+                        new DocumentFormat.OpenXml.Wordprocessing.Text(
+                            "Ben " + sinifad + " sınıfı " +
+                            lblogrencinumara.Text + " numaralı öğrencisi "
+                        )));
+
+                    // Öğrenci adı bold
+                    icerik.Append(new DocumentFormat.OpenXml.Wordprocessing.Run(
+                        new DocumentFormat.OpenXml.Wordprocessing.RunProperties(
+                            new DocumentFormat.OpenXml.Wordprocessing.Bold()
+                        ),
+                        new DocumentFormat.OpenXml.Wordprocessing.Text(" "+
+                            lblogrenciadsoyad.Text
+                        )));
+
+                    icerik.Append(new DocumentFormat.OpenXml.Wordprocessing.Run(
+                        new DocumentFormat.OpenXml.Wordprocessing.Text(
+                            " " + tarihSaat +
+                            " tarihinde, Öğretmenim " +
+                            ogretmenadsoyad +
+                            " tarafından " +
+                            rchnotdus.Text +
+                            " için uyarıldım. Hatalı olduğumu anladım. Olumsuz davranışlarımın yinelenmesi durumunda uygulanabilecek yaptırımlar konusunda bilgilendirildim. Aynı tür davranışı bir kez daha yapmayacağıma söz veriyorum."
+                        )));
+                    body.Append(icerik);
+
+                    mainPart.Document.Append(body);
+                    mainPart.Document.Save();
+                }
+
+                MessageBox.Show("Sözleşme başarıyla oluşturuldu.",
+                    "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+       
+
         void ogrencilistele()
         {
             int hafta=haftaal(DateTime.Now);
@@ -180,6 +268,8 @@ namespace PERFORMANS
 
         public int derssaati;
         public int sinif;
+        string ogretmenadsoyad;
+        string sinifad;
 
        
         private void frmanaform_Load(object sender, EventArgs e)
@@ -207,7 +297,7 @@ namespace PERFORMANS
                 OleDbDataReader rd = adbransoku.ExecuteReader();
                 while (rd.Read())
                 {
-
+                    ogretmenadsoyad = rd[1].ToString();
                     lbladbrans.Text = ("SAYIN " + rd[1] + " HOŞGELDİNİZ." + " BRANŞINIZ: " + rd[3]).ToUpper();
                     lblders.Text = rd[3].ToString();
                     
@@ -236,6 +326,16 @@ namespace PERFORMANS
                 
             }
 
+            con.Open();
+            OleDbCommand komutsinifoku = new OleDbCommand("select SINIFAD FROM TBLSINIFLAR WHERE SINIFID=@p1" , con);
+            komutsinifoku.Parameters.AddWithValue("@p1", sinif);
+            OleDbDataReader komutsinifokurd = komutsinifoku.ExecuteReader();
+            while (komutsinifokurd.Read())
+            {
+                sinifad = komutsinifokurd[0].ToString();
+            }
+
+            con.Close();
             
         }
         void ogrencipuan()
@@ -805,12 +905,15 @@ namespace PERFORMANS
                             komutpuankaydet.Parameters.AddWithValue("@UT", true);
                             komutpuankaydet.Parameters.AddWithValue("@P9", true);
                             komutpuankaydet.Parameters.AddWithValue("@P10", rchnotdus.Text);
+                           
                         }
                         else if (chkolumsuzuyari.Visible == true)
                         {
                             komutpuankaydet.Parameters.AddWithValue("@UT", false);
                             komutpuankaydet.Parameters.AddWithValue("@P9", true);
                             komutpuankaydet.Parameters.AddWithValue("@P10", rchnotdus.Text);
+                            SozlesmeOlustur();
+                            
                         }
 
                     }
@@ -854,6 +957,8 @@ namespace PERFORMANS
                                 komutpuankaydet.Parameters.AddWithValue("@UT", false);
                                 komutpuankaydet.Parameters.AddWithValue("@P9", true);
                                 komutpuankaydet.Parameters.AddWithValue("@P10", rchnotdus.Text);
+                                SozlesmeOlustur();
+                                
                             }
 
                         }

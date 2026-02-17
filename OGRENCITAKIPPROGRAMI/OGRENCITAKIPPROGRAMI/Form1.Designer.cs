@@ -122,6 +122,7 @@
             this.btnizin.Text = "İZİN";
             this.btnizin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnizin.UseVisualStyleBackColor = false;
+            this.btnizin.Click += new System.EventHandler(this.btnizin_Click);
             // 
             // btntelefon
             // 

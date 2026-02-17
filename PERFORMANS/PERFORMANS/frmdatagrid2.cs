@@ -6,9 +6,12 @@ using System.Data.OleDb;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Reflection;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace PERFORMANS
 {
@@ -110,10 +113,10 @@ namespace PERFORMANS
             }
             else if (sec == 6)
             {
-                
+                button1.Enabled = true;
                 OleDbConnection con = new OleDbConnection(conn.baglan);
                 frmistatistikler frmistatistikler = new frmistatistikler();
-                OleDbCommand komutpuangetir6 = new OleDbCommand("SELECT OGRENCIADISOYADI, SUM([1_OLCUT]) AS 'BİRİNCİ ÖLÇÜT', SUM([2_OLCUT]) AS 'İKİNCİ ÖLÇÜT', SUM([3_OLCUT]) AS 'ÜÇÜNCÜ ÖLÇÜT', SUM([4_OLCUT]) AS 'DÖRDÜNCÜ ÖLÇÜT', SUM([5_OLCUT]) AS 'BEŞİNCİ ÖLÇÜT', SUM(TOPLAMPUAN) AS 'TOPLAM PUAN' FROM TBLNOTLAR  INNER JOIN  TBLOGRENCILER ON TBLOGRENCILER.OGRENCIID=TBLNOTLAR.OGRENCININID WHERE SINIF=@P1 AND BRANS=@P2 GROUP BY OGRENCIADISOYADI ORDER BY  SUM(TOPLAMPUAN) DESC", con);
+                OleDbCommand komutpuangetir6 = new OleDbCommand("SELECT OGRENCIADISOYADI, SUM([1_OLCUT])  AS BIRINCI_OLCUT, SUM([2_OLCUT])  AS IKINCI_OLCUT, SUM([3_OLCUT])  AS UCUNCU_OLCUT, SUM([4_OLCUT])  AS DORDUNCU_OLCUT, SUM([5_OLCUT])  AS BESINCI_OLCUT, SUM(TOPLAMPUAN)  AS  TOPLAMPUAN  FROM TBLNOTLAR INNER JOIN TBLOGRENCILER ON TBLOGRENCILER.OGRENCIID = TBLNOTLAR.OGRENCININID WHERE SINIF = @P1  AND BRANS = @P2 AND NOTLANDIRMA=False  GROUP BY OGRENCIADISOYADI ORDER BY SUM(TOPLAMPUAN) DESC", con);
                 komutpuangetir6.Parameters.AddWithValue("@P1", sinif);
                 komutpuangetir6.Parameters.AddWithValue("@P2", ders);
                 OleDbDataAdapter da6 = new OleDbDataAdapter(komutpuangetir6);
@@ -125,11 +128,110 @@ namespace PERFORMANS
                 dataGridView1.Columns[3].HeaderText = ucuncuolcut;
                 dataGridView1.Columns[4].HeaderText = dorduncuolcut;
                 dataGridView1.Columns[5].HeaderText = besinciolcut;
+
+
+                // En yüksek puanı al (liste zaten DESC sıralı)
+                double enYuksekPuan = 0;
+
+                if (dt6.Rows.Count > 0)
+                {
+                    enYuksekPuan = Convert.ToDouble(dt6.Rows[0]["TOPLAMPUAN"]);
+                }
+
+                dt6.Columns.Add("ORANLI_PUAN", typeof(double));
+
+                foreach (DataRow row in dt6.Rows)
+                {
+                    double ogrenciPuan = Convert.ToDouble(row["TOPLAMPUAN"]);
+
+                    if (enYuksekPuan > 0)
+                        row["ORANLI_PUAN"] = Math.Round((ogrenciPuan / enYuksekPuan) * 100, 2);
+                    else
+                        row["ORANLI_PUAN"] = 0;
+                }
+
             }
 
 
 
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result1 = MessageBox.Show(
+"Bugüne kadarki notlarınız kilitlenecek ve hesap edilmeyecek. Onaylıyor musunuz.",
+"Bilgi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result1 == DialogResult.Yes && sec == 6)
+            {
+                using (OleDbConnection con = new OleDbConnection(conn.baglan))
+                {
+                    con.Open();
+
+                    OleDbCommand komutnotguncelle = new OleDbCommand(
+                    "UPDATE TBLNOTLAR SET [NOTLANDIRMA] = True WHERE [SINIF] = ? AND [BRANS] = ?", con);
+
+                    komutnotguncelle.Parameters.AddWithValue("?", sinif);
+                    komutnotguncelle.Parameters.AddWithValue("?", ders);
+
+                    komutnotguncelle.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Notlar sıfırlandı.", "Bilgi",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                
+                    SaveFileDialog sfd = new SaveFileDialog();
+                    sfd.Filter = "Excel Dosyası (*.xlsx)|*.xlsx";
+                    sfd.Title = "Excel Olarak Kaydet";
+                    sfd.FileName = "Rapor.xlsx";
+
+                    if (sfd.ShowDialog() == DialogResult.OK)
+                    {
+                        Excel.Application excelApp = new Excel.Application();
+                        Excel.Workbook workbook = excelApp.Workbooks.Add(Type.Missing);
+                        Excel.Worksheet worksheet = workbook.ActiveSheet;
+                        worksheet.Name = "Not Listesi";
+
+                        // 🔹 Sütun Başlıkları
+                        for (int i = 0; i < dataGridView1.Columns.Count; i++)
+                        {
+                            worksheet.Cells[1, i + 1] = dataGridView1.Columns[i].HeaderText;
+                        }
+
+                        // 🔹 Satır Verileri
+                        for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                        {
+                            for (int j = 0; j < dataGridView1.Columns.Count; j++)
+                            {
+                                worksheet.Cells[i + 2, j + 1] =
+                                    dataGridView1.Rows[i].Cells[j].Value?.ToString();
+                            }
+                        }
+                    worksheet.Columns.AutoFit();
+                    workbook.SaveAs(sfd.FileName);
+                        workbook.Close();
+                        excelApp.Quit();
+
+                        MessageBox.Show("Excel dosyası başarıyla oluşturuldu.",
+                        "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                
+            }
+            catch (Exception hata)
+            {
+
+                MessageBox.Show(hata.ToString());
+            }
+          
         }
     }
 }

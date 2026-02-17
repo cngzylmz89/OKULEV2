@@ -46,15 +46,7 @@ namespace OGRENCITAKIPPROGRAMI
             this.Close();
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-           
-            if(this.WindowState == FormWindowState.Maximized)
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
-           
-        }
+      
 
         private void button4_Click(object sender, EventArgs e)
         {

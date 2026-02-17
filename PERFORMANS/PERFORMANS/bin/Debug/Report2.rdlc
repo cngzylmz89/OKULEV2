@@ -21,7 +21,7 @@
               <Width>4.56375cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>4.96062cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.5cm</Width>
@@ -97,7 +97,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>DERS ADI</Value>
+                              <Value>BRANSADI</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -127,7 +127,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>DERS SAATİ</Value>
+                              <Value>SAATAD</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -157,7 +157,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>SINIF</Value>
+                              <Value>SINIFAD</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -187,7 +187,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>OGRENCI ADI SOYADI</Value>
+                              <Value>OGRENCIADISOYADI</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -217,7 +217,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>OGRENCI NUMARASI</Value>
+                              <Value>OGRENCINUMARASI</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -296,6 +296,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -1061,7 +1062,7 @@
         <Top>1.10808cm</Top>
         <Left>0.60599cm</Left>
         <Height>1.2cm</Height>
-        <Width>42.06375cm</Width>
+        <Width>44.52437cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1072,7 +1073,7 @@
     <Height>2in</Height>
     <Style />
   </Body>
-  <Width>16.97086in</Width>
+  <Width>17.76786in</Width>
   <Page>
     <PageHeader>
       <Height>2.54cm</Height>

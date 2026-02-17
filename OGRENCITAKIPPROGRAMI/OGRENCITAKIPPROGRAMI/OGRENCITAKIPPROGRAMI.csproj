@@ -79,6 +79,12 @@
     <Compile Include="frmtelefon.Designer.cs">
       <DependentUpon>frmtelefon.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmuniforma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuniforma.Designer.cs">
+      <DependentUpon>frmuniforma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmtelefon.resx">
       <DependentUpon>frmtelefon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuniforma.resx">
+      <DependentUpon>frmuniforma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -156,6 +165,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_insert_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Report_Card_64px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

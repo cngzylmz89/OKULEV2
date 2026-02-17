@@ -250,7 +250,7 @@
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.OrangeRed;
             this.splitContainer2.Panel2.Controls.Add(this.tableLayoutPanel2);
             this.splitContainer2.Size = new System.Drawing.Size(1235, 486);
-            this.splitContainer2.SplitterDistance = 863;
+            this.splitContainer2.SplitterDistance = 864;
             this.splitContainer2.SplitterWidth = 3;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -274,7 +274,7 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.tableLayoutPanel1);
-            this.splitContainer3.Size = new System.Drawing.Size(863, 486);
+            this.splitContainer3.Size = new System.Drawing.Size(864, 486);
             this.splitContainer3.SplitterDistance = 113;
             this.splitContainer3.SplitterWidth = 3;
             this.splitContainer3.TabIndex = 0;
@@ -395,7 +395,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(863, 370);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(864, 370);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -463,7 +463,7 @@
             this.label5.Location = new System.Drawing.Point(708, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(153, 61);
+            this.label5.Size = new System.Drawing.Size(154, 61);
             this.label5.TabIndex = 4;
             this.label5.Text = "CUMA";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -965,7 +965,7 @@
             this.btnfriday1.Location = new System.Drawing.Point(708, 63);
             this.btnfriday1.Margin = new System.Windows.Forms.Padding(2);
             this.btnfriday1.Name = "btnfriday1";
-            this.btnfriday1.Size = new System.Drawing.Size(153, 40);
+            this.btnfriday1.Size = new System.Drawing.Size(154, 40);
             this.btnfriday1.TabIndex = 40;
             this.btnfriday1.Text = "  ";
             this.btnfriday1.UseVisualStyleBackColor = true;
@@ -979,7 +979,7 @@
             this.btnfriday2.Location = new System.Drawing.Point(708, 107);
             this.btnfriday2.Margin = new System.Windows.Forms.Padding(2);
             this.btnfriday2.Name = "btnfriday2";
-            this.btnfriday2.Size = new System.Drawing.Size(153, 40);
+            this.btnfriday2.Size = new System.Drawing.Size(154, 40);
             this.btnfriday2.TabIndex = 41;
             this.btnfriday2.Text = "  ";
             this.btnfriday2.UseVisualStyleBackColor = true;
@@ -993,7 +993,7 @@
             this.btnfriday3.Location = new System.Drawing.Point(708, 151);
             this.btnfriday3.Margin = new System.Windows.Forms.Padding(2);
             this.btnfriday3.Name = "btnfriday3";
-            this.btnfriday3.Size = new System.Drawing.Size(153, 40);
+            this.btnfriday3.Size = new System.Drawing.Size(154, 40);
             this.btnfriday3.TabIndex = 42;
             this.btnfriday3.Text = "  ";
             this.btnfriday3.UseVisualStyleBackColor = true;
@@ -1007,7 +1007,7 @@
             this.btnfriday4.Location = new System.Drawing.Point(708, 195);
             this.btnfriday4.Margin = new System.Windows.Forms.Padding(2);
             this.btnfriday4.Name = "btnfriday4";
-            this.btnfriday4.Size = new System.Drawing.Size(153, 40);
+            this.btnfriday4.Size = new System.Drawing.Size(154, 40);
             this.btnfriday4.TabIndex = 43;
             this.btnfriday4.Text = "  ";
             this.btnfriday4.UseVisualStyleBackColor = true;
@@ -1021,7 +1021,7 @@
             this.btnfriday5.Location = new System.Drawing.Point(708, 239);
             this.btnfriday5.Margin = new System.Windows.Forms.Padding(2);
             this.btnfriday5.Name = "btnfriday5";
-            this.btnfriday5.Size = new System.Drawing.Size(153, 40);
+            this.btnfriday5.Size = new System.Drawing.Size(154, 40);
             this.btnfriday5.TabIndex = 44;
             this.btnfriday5.Text = "  ";
             this.btnfriday5.UseVisualStyleBackColor = true;
@@ -1035,7 +1035,7 @@
             this.btnfriday6.Location = new System.Drawing.Point(708, 283);
             this.btnfriday6.Margin = new System.Windows.Forms.Padding(2);
             this.btnfriday6.Name = "btnfriday6";
-            this.btnfriday6.Size = new System.Drawing.Size(153, 40);
+            this.btnfriday6.Size = new System.Drawing.Size(154, 40);
             this.btnfriday6.TabIndex = 45;
             this.btnfriday6.Text = "  ";
             this.btnfriday6.UseVisualStyleBackColor = true;
@@ -1049,7 +1049,7 @@
             this.btnfriday7.Location = new System.Drawing.Point(708, 327);
             this.btnfriday7.Margin = new System.Windows.Forms.Padding(2);
             this.btnfriday7.Name = "btnfriday7";
-            this.btnfriday7.Size = new System.Drawing.Size(153, 41);
+            this.btnfriday7.Size = new System.Drawing.Size(154, 41);
             this.btnfriday7.TabIndex = 46;
             this.btnfriday7.Text = "  ";
             this.btnfriday7.UseVisualStyleBackColor = true;
@@ -1071,7 +1071,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(369, 486);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(368, 486);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // panel1
@@ -1080,7 +1080,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 113);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(363, 88);
+            this.panel1.Size = new System.Drawing.Size(362, 88);
             this.panel1.TabIndex = 0;
             // 
             // groupBox2
@@ -1091,7 +1091,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(363, 88);
+            this.groupBox2.Size = new System.Drawing.Size(362, 88);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "PUANLAMA DURUMUNUZ";
@@ -1132,7 +1132,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 207);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(363, 31);
+            this.panel3.Size = new System.Drawing.Size(362, 31);
             this.panel3.TabIndex = 1;
             // 
             // groupBox1
@@ -1145,7 +1145,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.groupBox1.Size = new System.Drawing.Size(363, 31);
+            this.groupBox1.Size = new System.Drawing.Size(362, 31);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "PUANLAMA ŞEKLİ";
@@ -1154,7 +1154,7 @@
             // 
             this.pckhand.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pckhand.Image = global::PERFORMANS.Properties.Resources.icons8_hand_right_100px_1;
-            this.pckhand.Location = new System.Drawing.Point(101, 21);
+            this.pckhand.Location = new System.Drawing.Point(100, 21);
             this.pckhand.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pckhand.Name = "pckhand";
             this.pckhand.Size = new System.Drawing.Size(76, 45);
@@ -1196,7 +1196,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(363, 104);
+            this.panel4.Size = new System.Drawing.Size(362, 104);
             this.panel4.TabIndex = 2;
             // 
             // groupBox3
@@ -1208,7 +1208,7 @@
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(363, 104);
+            this.groupBox3.Size = new System.Drawing.Size(362, 104);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "İŞLEMLER";
@@ -1270,7 +1270,7 @@
             this.panel5.Location = new System.Drawing.Point(2, 243);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(365, 241);
+            this.panel5.Size = new System.Drawing.Size(364, 241);
             this.panel5.TabIndex = 3;
             // 
             // groupBox4
@@ -1281,7 +1281,7 @@
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Size = new System.Drawing.Size(365, 241);
+            this.groupBox4.Size = new System.Drawing.Size(364, 241);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "PUANLANMAMIŞ DERSLER";
@@ -1296,7 +1296,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(2, 18);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(361, 221);
+            this.dataGridView1.Size = new System.Drawing.Size(360, 221);
             this.dataGridView1.TabIndex = 3;
             // 
             // timer1

@@ -103,6 +103,16 @@ namespace PERFORMANS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_business_report_96px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_business_report_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_chart_80px_1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_chart_80px_1", resourceCulture);
@@ -193,6 +203,26 @@ namespace PERFORMANS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_lock_200px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_lock_200px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_lock_200px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_lock_200px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_mountain_80px {
             get {
                 object obj = ResourceManager.GetObject("icons8_mountain_80px", resourceCulture);
@@ -206,6 +236,16 @@ namespace PERFORMANS.Properties {
         internal static System.Drawing.Bitmap icons8_negative_80px {
             get {
                 object obj = ResourceManager.GetObject("icons8_negative_80px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_report_file_64px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_report_file_64px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -70,6 +70,8 @@
             this.OGRANNETELEFON = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.splitContainer7 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -77,18 +79,17 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.splitContainer8 = new System.Windows.Forms.SplitContainer();
-            this.button3 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.btnara = new System.Windows.Forms.Button();
+            this.btnizinkaydet = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ARANMATARIHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MAZERET = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.OGRTELEFONARANANTELEFON = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -129,8 +130,8 @@
             this.splitContainer8.Panel1.SuspendLayout();
             this.splitContainer8.Panel2.SuspendLayout();
             this.splitContainer8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -250,7 +251,6 @@
             this.button5.Size = new System.Drawing.Size(75, 49);
             this.button5.TabIndex = 2;
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             this.button5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button5_MouseClick);
             // 
             // splitContainer2
@@ -662,6 +662,29 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(406, 355);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label5.Location = new System.Drawing.Point(3, 250);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(197, 105);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "MAZERETİ:";
+            // 
+            // richTextBox4
+            // 
+            this.richTextBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox4.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.richTextBox4.Location = new System.Drawing.Point(206, 253);
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.Size = new System.Drawing.Size(197, 99);
+            this.richTextBox4.TabIndex = 12;
+            this.richTextBox4.Text = "";
+            // 
             // richTextBox3
             // 
             this.richTextBox3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -750,17 +773,20 @@
             this.splitContainer8.SplitterDistance = 165;
             this.splitContainer8.TabIndex = 0;
             // 
-            // button3
+            // tableLayoutPanel6
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(3, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(197, 159);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "ARA";
-            this.button3.UseVisualStyleBackColor = false;
+            this.tableLayoutPanel6.ColumnCount = 2;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Controls.Add(this.btnizinkaydet, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.btnara, 0, 0);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 1;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(406, 165);
+            this.tableLayoutPanel6.TabIndex = 1;
             // 
             // dataGridView2
             // 
@@ -791,7 +817,8 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.ARANMATARIHI,
-            this.MAZERET});
+            this.MAZERET,
+            this.OGRTELEFONARANANTELEFON});
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.EnableHeadersVisualStyles = false;
             this.dataGridView2.GridColor = System.Drawing.SystemColors.ActiveCaption;
@@ -808,6 +835,36 @@
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.Size = new System.Drawing.Size(406, 319);
             this.dataGridView2.TabIndex = 1;
+            // 
+            // btnara
+            // 
+            this.btnara.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnara.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnara.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnara.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnara.Image = global::OGRENCITAKIPPROGRAMI.Properties.Resources.icons8_search_64px;
+            this.btnara.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnara.Location = new System.Drawing.Point(3, 3);
+            this.btnara.Name = "btnara";
+            this.btnara.Size = new System.Drawing.Size(197, 159);
+            this.btnara.TabIndex = 2;
+            this.btnara.Text = "ARA";
+            this.btnara.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnara.UseVisualStyleBackColor = false;
+            // 
+            // btnizinkaydet
+            // 
+            this.btnizinkaydet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnizinkaydet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnizinkaydet.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnizinkaydet.Image = global::OGRENCITAKIPPROGRAMI.Properties.Resources.icons8_insert_50px;
+            this.btnizinkaydet.Location = new System.Drawing.Point(206, 3);
+            this.btnizinkaydet.Name = "btnizinkaydet";
+            this.btnizinkaydet.Size = new System.Drawing.Size(197, 159);
+            this.btnizinkaydet.TabIndex = 3;
+            this.btnizinkaydet.Text = "ARAMAYI  KAYDET";
+            this.btnizinkaydet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnizinkaydet.UseVisualStyleBackColor = false;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -839,55 +896,10 @@
             this.MAZERET.HeaderText = "MAZERET";
             this.MAZERET.Name = "MAZERET";
             // 
-            // richTextBox4
+            // OGRTELEFONARANANTELEFON
             // 
-            this.richTextBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox4.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.richTextBox4.Location = new System.Drawing.Point(206, 253);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(197, 99);
-            this.richTextBox4.TabIndex = 12;
-            this.richTextBox4.Text = "";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(3, 250);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(197, 105);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "MAZERETİ:";
-            // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.ColumnCount = 2;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.button6, 1, 0);
-            this.tableLayoutPanel6.Controls.Add(this.button3, 0, 0);
-            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 1;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(406, 165);
-            this.tableLayoutPanel6.TabIndex = 1;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button6.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button6.Location = new System.Drawing.Point(206, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(197, 159);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "ARAMAYI KAYDET";
-            this.button6.UseVisualStyleBackColor = false;
+            this.OGRTELEFONARANANTELEFON.HeaderText = "ARANAN TELEFON";
+            this.OGRTELEFONARANANTELEFON.Name = "OGRTELEFONARANANTELEFON";
             // 
             // frmtelefon
             // 
@@ -945,8 +957,8 @@
             this.splitContainer8.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).EndInit();
             this.splitContainer8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tableLayoutPanel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -996,17 +1008,18 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.SplitContainer splitContainer8;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.Button btnizinkaydet;
+        private System.Windows.Forms.Button btnara;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn ARANMATARIHI;
         private System.Windows.Forms.DataGridViewTextBoxColumn MAZERET;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OGRTELEFONARANANTELEFON;
     }
 }

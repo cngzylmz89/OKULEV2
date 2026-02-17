@@ -52,5 +52,12 @@ namespace OGRENCITAKIPPROGRAMI
             frm.Show();
             
         }
+
+        private void btnizin_Click(object sender, EventArgs e)
+        {
+            frmizin frm=new frmizin();
+            frm.Show();
+
+        }
     }
 }
